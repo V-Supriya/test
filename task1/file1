@@ -1,0 +1,18 @@
+#!bin/bash
+echo " enter the marks"
+read marks
+if [ $marks -le 90 ]
+echo " the result is distinction "
+then
+if [ $marks -gt 75 -a $marks -lt  90 ]
+echo " the result is first class "
+then
+if [ $marks -gt 60 -a $marks -lt 75 ]
+echo " the result is second class "
+then
+if [ $marks -gt 35 -a $marks -lt 60 ]
+echo " the result is distinction "
+then
+else [ $marks -le 35 ]
+echo " the result is fail"
+fi
